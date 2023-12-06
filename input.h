@@ -10,7 +10,6 @@
 
 /* main.h에 정의된 전역 변수 사용 */
 extern Application application;
-extern Entity player[3];
 extern Entity BALL;
 extern Entity game_over;
 
