@@ -3,7 +3,7 @@
 
 #include "defs.h"
 #include "draw.h"
-#include "action.h"
+#include "actio.h"
 #include "input.h"
 #include "init.h"
 
