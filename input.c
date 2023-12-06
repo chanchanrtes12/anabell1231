@@ -101,7 +101,7 @@ void ResponseKeyDown(SDL_KeyboardEvent *event) {
     return;
 }
 
-void click1(void) {  
+void click1(void) {   //main의 Drawstart부터 drawchoice로 넘어감.
     SDL_Event event; 
     int quit = 0;
     while (SDL_PollEvent(&event) != 0) { 
@@ -122,7 +122,7 @@ void click1(void) {
     return;
 }
 
-void click2(void) {  
+void click2(void) {   //캐릭터선택
     SDL_Event event; 
     int quit = 0;
     int i;
@@ -133,14 +133,15 @@ void click2(void) {
         else if (event.type == SDL_MOUSEBUTTONDOWN) { 
             int mouseX = event.button.x;
             int mouseY = event.button.y;
-
+            int j=-1;
             for(i=0;i<2;++i) {
                 if(mouseX >= 0 && mouseX <= 213 && mouseY >= 0 && mouseY <= 480)
-                    Character[i] = 1;
+                     j=0;
                 else if(mouseX >= 213 && mouseX <= 436 && mouseY >= 0 && mouseY <= 480)
-                    Character[i] = 2;
+                    j =1;
                 else
-                    Character[i] = 3;
+                    j= 2;
+                Character[i].player[j];
             }
             DrawGameSetting();
             quit = 1;
@@ -150,7 +151,7 @@ void click2(void) {
     return;
 }
 
-void click3(void) {
+void click3(void) {  //게임세팅에서 게임하는 것으로 넘어가는코드
     int i;
     SDL_Event event; 
     int quit = 0;
