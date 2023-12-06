@@ -1,11 +1,7 @@
 
 
-#include "utils.h"
-#include "gravity.h"
-#include "action.h"
-#include "item.h"
-#include "utils.h"
-#include "player.h"
+#include "collision.h"
+
 
 void elasticCollision2D(Entity *object1, Entity *object2){//인자가Character[i].player[j]와 같은형태로 받아져야하는데 어떻게 할까요?
 
