@@ -1,5 +1,3 @@
-#define ITEM_WIDTH 20
-#define ITEM_HEIGHT 20
 #include <stdlib.h>
 #include <time.h>
 #include "main.h"
