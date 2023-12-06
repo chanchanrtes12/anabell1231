@@ -126,6 +126,7 @@ void click2(void) {   //캐릭터선택
     SDL_Event event; 
     int quit = 0;
     int i;
+    int a[2]={};
     while (SDL_PollEvent(&event) != 0) { 
         if (event.type == SDL_QUIT) { 
             quit = 1; 
@@ -142,6 +143,7 @@ void click2(void) {   //캐릭터선택
                 else
                     j= 2;
                 Character[i].player[j];
+                a[i]=j;
             }
             DrawGameSetting();
             quit = 1;
@@ -194,3 +196,4 @@ void click3(void) {  //게임세팅에서 게임하는 것으로 넘어가는코
 
     return;
 }
+
