@@ -43,7 +43,7 @@ void DrawChoice(void) {
 
 void DrawGameSetting(void) {
     SDL_SetRenderDrawColor(application.renderer, 0,0,0,255);
-    SDL_RenderDrawLine(application.renderer, 160,0,160,480);
+    SDL_RenderDrawLine(application.renderer, 160,0,160,480); //
     SDL_RenderDrawLine(application.renderer, 320,0,320,480);
     SDL_RenderDrawLine(application.renderer, 480,0,480,480);
 
@@ -51,25 +51,28 @@ void DrawGameSetting(void) {
 }
 
 void DrawGame3(void) {
-    if(Character[0].player[0] == 1){ //character는 플레이어라  chararcter[].player[]꼴이어야함
+    if(1){
+    if(a[num0] == 0){
         void InitPlayer1(void);
     }
-    if(Character[0] == 2){
+    if(a[num0] == 1){
         void InitPlayer2(void);
     }
-    if(Character[0] == 3){
-        void InitPlayer2(void);
+    if(a[num0] == 2){
+        void InitPlayer3(void);
     }
-    if(Character[1] == 1){
+    }
+    if(1){
+    if(a[num1] == 0){
         void InitPlayer1_1(void);
     }
-    if(Character[1] == 2){
+    if(a[num1] == 1){
         void InitPlayer2_1(void);
     }
-    if(Character[1] == 3){
+    if(a[num1] == 2){
         void InitPlayer3_1(void);
     }
-
+    }
     RenderScoreBoard(&score_board1);
     RenderScoreBoard(&score_board2);
 
@@ -84,101 +87,99 @@ void DrawGame3(void) {
 }
 
 void DrawGame5(void) {
-    if(Character[0] == 1){
+     if(1){
+    if(a[num0] == 0){
         void InitPlayer1(void);
     }
-    if(Character[0] == 2){
+    if(a[num0] == 1){
         void InitPlayer2(void);
     }
-    if(Character[0] == 3){
-        void InitPlayer2(void);
+    if(a[num0] == 2){
+        void InitPlayer3(void);
     }
-    if(Character[1] == 1){
+    }
+    if(1){
+    if(a[num1] == 0){
         void InitPlayer1_1(void);
     }
-    if(Character[1] == 2){
+    if(a[num1] == 1){
         void InitPlayer2_1(void);
     }
-    if(Character[1] == 3){
+    if(a[num1] == 2){
         void InitPlayer3_1(void);
     }
-
+    }
     RenderScoreBoard(&score_board1);
     RenderScoreBoard(&score_board2);
-
     Initfield();
-
     InitLgoalnet();
     InitRgoalnet();
-
     InitBall();
-
     return;
 }
 
 void DrawGame7(void) {
-    if(Character[0] == 1){
+     if(1){
+    if(a[num0] == 0){
         void InitPlayer1(void);
     }
-    if(Character[0] == 2){
+    if(a[num0] == 1){
         void InitPlayer2(void);
     }
-    if(Character[0] == 3){
-        void InitPlayer2(void);
+    if(a[num0] == 2){
+        void InitPlayer3(void);
     }
-    if(Character[1] == 1){
+    }
+    if(1){
+    if(a[num1] == 0){
         void InitPlayer1_1(void);
     }
-    if(Character[1] == 2){
+    if(a[num1] == 1){
         void InitPlayer2_1(void);
     }
-    if(Character[1] == 3){
+    if(a[num1] == 2){
         void InitPlayer3_1(void);
     }
-
+    }
     RenderScoreBoard(&score_board1);
     RenderScoreBoard(&score_board2);
-
     Initfield();
-
     InitLgoalnet();
     InitRgoalnet();
-
     InitBall();
-
     return;
 }
 
 void DrawGame9(void) {
-    if(Character[0] == 1){
+     if(1){
+    if(a[num0] == 0){
         void InitPlayer1(void);
     }
-    if(Character[0] == 2){
+    if(a[num0] == 1){
         void InitPlayer2(void);
     }
-    if(Character[0] == 3){
-        void InitPlayer2(void);
+    if(a[num0] == 2){
+        void InitPlayer3(void);
     }
-    if(Character[1] == 1){
+    }
+    if(1){
+    if(a[num1] == 0){
         void InitPlayer1_1(void);
     }
-    if(Character[1] == 2){
+    if(a[num1] == 1){
         void InitPlayer2_1(void);
     }
-    if(Character[1] == 3){
+    if(a[num1] == 2){
         void InitPlayer3_1(void);
+    }
     }
 
     RenderScoreBoard(&score_board1);
     RenderScoreBoard(&score_board2);
-
     Initfield();
-
     InitLgoalnet();
     InitRgoalnet();
-
     InitBall();
-
     return;
 }
 
