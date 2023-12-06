@@ -12,7 +12,9 @@
 #include "SDL2/SDL_image.h"
 #include "SDL2/SDL_ttf.h"
 #include "SDL2/SDL_mixer.h"
-
+#define num0 0
+#define num1 1
+#define num2 2
 #define FPS 60         
 #define BUFSIZE 1024
 #define BUFSIZE2 3
@@ -108,6 +110,4 @@ Entity field;
 Entity LGoalnet;
 Entity RGoalnet;
 Entity game_over;
-
-
-void elasticCollision2D(Entity *object1, Entity *object2);
+int a[2]; //input.c에서 145번째 줄에서 받아옴
